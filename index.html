@@ -24,33 +24,23 @@
         українську мову.</p>
     </div>
   </div>
-  <button class="btn" id="quiz-start-btn">Почати</button>
+  <div class="container">  
+    <div id="contact">
+      <h3>Вітаю!</h3>
+      <h4>Якийсь текст</h4>
+      <fieldset>
+        <input id='nickname' placeholder="Вигадайте нікнейм" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input id='mobile' placeholder="Мобільний телефон" pattern="\+?\d{10}" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <button disabled class="btn" id="quiz-start-btn">Почати</button>
+      </fieldset>
+    </div>
+  </div>
   <form class="quiz hide" id="quiz-form">
     <div id="quiz-container">
-      <!-- for reference
-    <h3 class="quiz__question"><span class="quiz__number">1.</span> Question 1</h3>
-    <div class="quiz__answers">
-      <div class="quiz__answer">
-        <input type="radio" id="answer1" name="answer" data-correct="false" required />
-        <label for="answer1">Answer 1</label>
-      </div>
-
-      <div class="quiz__answer">
-        <input type="radio" id="answer2" name="answer" data-correct="true" />
-        <label for="answer2">Answer 2</label>
-      </div>
-
-      <div class="quiz__answer">
-        <input type="radio" id="answer3" name="answer" data-correct="false" />
-        <label for="answer3">Answer 3</label>
-      </div>
-
-      <div class="quiz__answer">
-        <input type="radio" id="answer4" name="answer" data-correct="false" />
-        <label for="answer4">Answer 4</label>
-      </div>
-    </div> 
-    -->
     </div>
     <div class="quiz__info">
       <p class="quiz__time" id="quiz-timer">00:00</p>
