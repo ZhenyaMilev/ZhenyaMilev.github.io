@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="wrapper-header">
+    <div class="logo">
+      <img src="logo.jpg" alt="">
+    </div>
+    <div class="description">
+      <p><span style="font-weight: bold">Український пазл</span> - проект, який допомагає усім охочим покращити знання української мови.</p>
+      <p>Тут ви зможете
+        проходити щоденні опитування і збирати бали або пазли за правильні відповіді. Ми додали гейміфікацію, щоб
+        навчання стало цікавішим та захоплюючим."</p>
+      <p>Також, не забувайте підписуватися на наш <a style='color: black' href="">Telegram-канал</a>, щоб отримувати цікаву та корисну інформацію про
+        українську мову.</p>
+    </div>
+  </div>
+  <button class="btn" id="quiz-start-btn">Почати</button>
+  <form class="quiz hide" id="quiz-form">
+    <div id="quiz-container">
+      <!-- for reference
+    <h3 class="quiz__question"><span class="quiz__number">1.</span> Question 1</h3>
+    <div class="quiz__answers">
+      <div class="quiz__answer">
+        <input type="radio" id="answer1" name="answer" data-correct="false" required />
+        <label for="answer1">Answer 1</label>
+      </div>
+
+      <div class="quiz__answer">
+        <input type="radio" id="answer2" name="answer" data-correct="true" />
+        <label for="answer2">Answer 2</label>
+      </div>
+
+      <div class="quiz__answer">
+        <input type="radio" id="answer3" name="answer" data-correct="false" />
+        <label for="answer3">Answer 3</label>
+      </div>
+
+      <div class="quiz__answer">
+        <input type="radio" id="answer4" name="answer" data-correct="false" />
+        <label for="answer4">Answer 4</label>
+      </div>
+    </div> 
+    -->
+    </div>
+    <div class="quiz__info">
+      <p class="quiz__time" id="quiz-timer">00:00</p>
+      <div class="button-group">
+        <button class="quiz__reset btn" id="quiz-restart-btn" data-type="warning" type="button">Спочатку</button>
+        <button class="quiz__next btn" data-type="primary" type="submit">Далі</button>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
