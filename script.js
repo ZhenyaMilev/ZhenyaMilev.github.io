@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const quizData = [
-    {
+  const quizData = [{
       question: "Скільки слів має сучасна українська мова?",
       answers: [{
           id: 1,
@@ -79,15 +78,46 @@ document.addEventListener('DOMContentLoaded', function () {
   const quizTimerElem = document.getElementById("quiz-timer");
   const quizStartBtn = document.getElementById("quiz-start-btn");
   const quizRestartBtn = document.getElementById("quiz-restart-btn");
+  const contact = document.querySelector('#contact');
 
   let quizTime = 0;
   let quizIndex = 0;
   let quizScore = 0;
   let intervalId = null;
 
+  const nicknameInput = document.querySelector('input[placeholder="Вигадайте нікнейм"]');
+  const phoneInput = document.querySelector('input[placeholder="Мобільний телефон"]');
+
+  const input1 = document.getElementById('nickname');
+  const input2 = document.getElementById('mobile');
+
+  // check if values are already stored in local storage
+  const storedValue1 = localStorage.getItem('input1Value');
+  const storedValue2 = localStorage.getItem('input2Value');
+
+  if (storedValue1 && storedValue2) {
+    // if values are already stored, set the inputs' values to the stored values
+    input1.value = storedValue1;
+    input2.value = storedValue2;
+
+    quizStartBtn.removeAttribute('disabled');
+  }
 
 
 
+  const inputList = Array.from(document.querySelector('.container').querySelectorAll('input'));
+
+  inputList.forEach(input => {
+    input.addEventListener('input', () => {
+      const allInputsFilled = inputList.every(input => input.value.trim() !== '');
+
+      if (allInputsFilled) {
+        quizStartBtn.removeAttribute('disabled');
+      } else {
+        quizStartBtn.setAttribute('disabled', 'disabled');
+      }
+    });
+  });
 
   quizFormElem.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -107,12 +137,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   quizStartBtn.addEventListener("click", (e) => {
-    e.target.classList.add("hide");
-    quizFormElem.classList.remove("hide");
+    if (nicknameInput.checkValidity() && phoneInput.checkValidity()) {
+      localStorage.setItem('input1Value', input1.value);
+      localStorage.setItem('input2Value', input2.value);
 
-    setTimer();
+      contact.classList.add("hide");
+      quizFormElem.classList.remove("hide");
 
-    renderQuiz(quizData[quizIndex], quizIndex);
+      // Call function to set timer
+      setTimer();
+
+      // Call function to render quiz
+      renderQuiz(quizData[quizIndex], quizIndex);
+    }
   });
 
   quizRestartBtn.addEventListener("click", () => {
