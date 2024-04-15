@@ -1,0 +1,108 @@
+.elisc_tm_experience .list ul li .list_inner {
+	min-height: 392px;
+}
+
+.elisc_tm_contact {
+	min-height: 60vh;
+}
+
+.main_title {
+	display: none;
+}
+
+.elisc_tm_video .text {
+	display: none;
+}
+
+.elisc_tm_button[data-position="center"] {
+	display: none;
+}
+
+.elisc_tm_portfolio .portfolio_list .details .title a {
+	display: none;
+}
+
+.elisc_tm_portfolio_title .buttons a:last-child {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.elisc_tm_portfolio_title .buttons a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.elisc_tm_portfolio_title .buttons a:hover svg {
+	fill: white;
+}
+
+.arrow-block {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	width: 100%;
+}
+
+.arrow-block.arrow-block img{
+	width: 100px;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.elisc_tm_portfolio .portfolio_list {
+		margin-bottom: 0;
+	}
+
+	.elisc_tm_video {
+		min-height: 240px;
+	}
+
+}
+
+@media only screen and (max-width: 1040px) {
+	.arrow-block {
+		display: none;
+	}
+}
+
+.elisc_tm_testimonials {
+	border-radius: 5px;
+}
+
+.elisc_tm_home .details .right img {
+	max-width: 500px;
+	width: 100%;
+}
+
+
+#scrollToBottomBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	width: 90px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	background: transparent;
+	border: 1px solid #130F49;
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+	cursor: pointer;
+	color: #130F49;
+}
+
+#scrollToBottomBtn.active {
+	opacity: 1;
+}
+
+#scrollToBottomBtn:hover {
+	background: #130F49;
+	color: white;
+}
+
+
