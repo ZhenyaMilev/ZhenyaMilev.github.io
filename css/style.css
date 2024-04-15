@@ -2565,7 +2565,7 @@ body::-webkit-scrollbar-thumb{
 	.elisc_tm_home .details{align-items: baseline;flex-direction: column-reverse;}
 	.elisc_tm_home .details .left{width: 100%;}
 	.elisc_tm_home .details .right{width: 100%;padding-left: 0px;margin-bottom: 50px;}
-	.elisc_tm_home{padding: 20px 0px;}
+	.elisc_tm_home{padding: 20px 0px; padding-top: 80px;}
 	.elisc_tm_home .title h3,.elisc_tm_home .title span{font-size: 50px;line-height: 63px;}
 	.elisc_tm_home .buttons{margin-bottom: 75px;}
 	.elisc_tm_biography{flex-direction: column;}
