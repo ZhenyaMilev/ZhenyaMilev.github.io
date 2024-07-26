@@ -52,8 +52,8 @@
 }
 
 .whatsapp-float img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 .iframe-wrapper {
@@ -94,6 +94,15 @@
 	font-weight: bold;
 	font-size: 15px;
 	margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition-delay: 1.5s;
+}
+
+.badge.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 
@@ -550,6 +559,9 @@ body::-webkit-scrollbar-thumb{
 .elisc_tm_mobile_menu .social ul{
 	margin: 0px;
 	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: end;
 }
 .elisc_tm_mobile_menu .social ul li{
 	margin: 0px 8px 0px 0px;
