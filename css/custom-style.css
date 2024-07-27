@@ -129,6 +129,7 @@
 .swiper-slide img {
 	width: 100%;
 	height: auto;
+	margin: 20px 0;
 }
 .swiper-button-next, .swiper-button-prev {
 	display: block;
@@ -279,6 +280,32 @@
 	#projectModal.open {
 		transform: translateY(0%);
 		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.elisc_tm_modalbox .description_wrap.description_wrap {
+		border-radius: 0;
+	}
+
+	.elisc_tm_modalbox.opened .box_inner {
+		border-radius: 0;
+	}
+
+	.elisc_tm_modalbox .box_inner {
+		top: 0;
+		bottom: 0;
+	}
+
+	.elisc_tm_modalbox .description_wrap:before {
+		height: 50px
+	}
+
+	.elisc_tm_modalbox .close a i {
+		background: white;
+		border-radius: 50%;
+    padding: 5px;
+		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 	}
 }
 

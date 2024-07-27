@@ -2020,9 +2020,7 @@ body::-webkit-scrollbar-thumb{
 }
 .elisc_tm_modalbox .close a i{
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-60%,-20%);
 }
 .elisc_tm_modalbox .description_wrap{
 	position: relative;
@@ -2653,9 +2651,9 @@ body::-webkit-scrollbar-thumb{
 	.elisc_tm_portfolio_title .elisc_tm_title{margin-bottom: 20px;}
 	.elisc_tm_partners ul li{width: 50%;}
 	.elisc_tm_testimonials{padding-left: 40px;padding-right: 40px;}
-	.elisc_tm_modalbox .box_inner{width: 300px;top: 40px;bottom: 40px;}
-	.elisc_tm_modalbox .description_wrap{padding: 30px 25px 25px 25px;}
-	.elisc_tm_modalbox .description_wrap:before{height: 30px;}
+	.elisc_tm_modalbox .box_inner{width: 100%;top: 40px;bottom: 40px;}
+	.elisc_tm_modalbox .description_wrap{padding: 60px 25px 25px 25px;}
+	.elisc_tm_modalbox .description_wrap:before{height: 30px; margin-bottom: 20px;}
 	.elisc_tm_modalbox .close{margin-left: auto;left: auto;right: 25px;top: 15px;}
 	.elisc_tm_modalbox .close a{color: #000;width: auto;height: auto;border: none;font-size: 20px;}
 	.elisc_tm_modalbox .infos .job h3{font-size: 19px;}
