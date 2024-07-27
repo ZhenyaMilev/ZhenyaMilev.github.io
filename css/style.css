@@ -52,8 +52,16 @@
 }
 
 .whatsapp-float img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
+	transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+	.whatsapp-float img {
+		width: 50px;
+		height: 50px;
+	}
 }
 
 .iframe-wrapper {
@@ -96,8 +104,7 @@
 	margin-bottom: 1rem;
   opacity: 0;
   transform: translateX(-100%);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  transition-delay: 1.5s;
+	transition: opacity .5s cubic-bezier(0.55, 0.055, 0.675, 0.19), transform .5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .badge.visible {
@@ -448,6 +455,7 @@ body::-webkit-scrollbar-thumb{
 	align-items: center;
 	justify-content: space-between;
 	padding: 0px 20px;
+	border-bottom: 1px solid #e2e1e1;
 }
 .elisc_tm_topbar .logo img{
 	max-width: 100px;
@@ -497,7 +505,7 @@ body::-webkit-scrollbar-thumb{
 	right: -200px;
 	height: 100vh;
 	width: 200px;
-	z-index: 15;
+	z-index: 100;
 	background-color: #fff;
 	
 	-webkit-transition: all .3s ease;
@@ -508,6 +516,7 @@ body::-webkit-scrollbar-thumb{
 }
 .elisc_tm_mobile_menu.opened{
 	right: 0px;
+	box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
 .elisc_tm_mobile_menu .inner{
 	position: relative;
@@ -566,6 +575,7 @@ body::-webkit-scrollbar-thumb{
 .elisc_tm_mobile_menu .social ul li{
 	margin: 0px 8px 0px 0px;
 	display: inline-block;
+	font-size: 24px;
 }
 .elisc_tm_mobile_menu .social ul li:last-child{
 	margin-right: 0px;
@@ -708,6 +718,10 @@ body::-webkit-scrollbar-thumb{
 }
 .elisc_tm_sidebar .social ul{
 	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
 }
 .elisc_tm_sidebar .social ul li{
 	margin: 0px 3px 0px 0px;
@@ -719,7 +733,9 @@ body::-webkit-scrollbar-thumb{
 .elisc_tm_sidebar .social ul li a{
 	width: 40px;
 	height: 40px;
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: relative;
 	border-radius: 100%;
 	background-color: rgba(19, 15, 73, 0.05);
@@ -765,6 +781,9 @@ body::-webkit-scrollbar-thumb{
 	font-weight: 800;
 	font-size: 60px;
 	line-height: 70px;
+}
+.elisc_tm_home .title h3.country {
+	font-size: 20px;
 }
 .elisc_tm_home .title span{
 	font-weight: 800;
@@ -829,12 +848,11 @@ body::-webkit-scrollbar-thumb{
 	display: flex;
 	align-items: center;
 	margin-bottom: 150px;
+	flex-wrap: wrap;
+	gap: 15px;
 }
 .elisc_tm_home .elisc_tm_button{
 	width: auto;
-}
-.elisc_tm_home .elisc_tm_button:nth-child(2){
-	margin-left: 15px;
 }
 .elisc_tm_home .info{
 	width: 100%;
@@ -909,7 +927,6 @@ body::-webkit-scrollbar-thumb{
 	display: block;
 	text-transform: uppercase;
 	font-weight: 500;
-	margin-bottom: 12px;
 }
 .elisc_tm_biography .name{
 	font-weight: 800;
@@ -926,7 +943,7 @@ body::-webkit-scrollbar-thumb{
 .elisc_tm_biography .text{
 	width: 100%;
 	float: left;
-	margin-bottom: 44px;
+	margin-bottom: 20px;
 }
 .elisc_tm_biography .text p{
 	margin-bottom: 30px;
@@ -2532,10 +2549,9 @@ body::-webkit-scrollbar-thumb{
 	.elisc_tm_home .info ul li a{font-size: 16px;}
 	.elisc_tm_biography .text p{margin-bottom: 20px;}
 	.elisc_tm_biography .info ul li{margin-right: 20px;}
-	.elisc_tm_biography .title .mini{margin-bottom: 5px;}
 	.elisc_tm_biography .name{font-size: 35px;}
 	.elisc_tm_biography .job{font-size: 17px;}
-	.elisc_tm_biography .title{margin-bottom: 30px;}
+	.elisc_tm_biography .title{margin-bottom: 20px;}
 	.elisc_tm_counter ul li .list_inner{padding: 45px 20px;}
 	.elisc_tm_counter h3{font-size: 35px;margin-bottom: 3px;}
 	.elisc_tm_title h3{font-size: 35px;}
@@ -2554,7 +2570,7 @@ body::-webkit-scrollbar-thumb{
 	.elisc_tm_portfolio .portfolio_list .details .category{margin-bottom: 0px;}
 	.elisc_tm_news .list .title h3{font-size: 25px;line-height: 33px;}
 	.elisc_tm_news .list .meta{margin-bottom: 6px;}
-	.elisc_tm_about{padding-top: 85px;}
+	.elisc_tm_about{padding-top: 20px;}
 	.elisc_tm_services{padding-top: 85px;}
 	.elisc_tm_portfolio{padding-top: 85px;}
 	.elisc_tm_news{padding-top: 85px;}
@@ -2581,7 +2597,7 @@ body::-webkit-scrollbar-thumb{
 	.elisc_tm_home .title h3,.elisc_tm_home .title span{font-size: 50px;line-height: 63px;}
 	.elisc_tm_home .buttons{margin-bottom: 75px;}
 	.elisc_tm_biography{flex-direction: column;}
-	.elisc_tm_biography .left{width: 100%;margin-bottom: 50px;}
+	.elisc_tm_biography .left{width: 100%;margin-bottom: 20px;}
 	.elisc_tm_biography .right{width: 100%;}
 	.elisc_tm_biography .text p{margin-bottom: 17px;}
 	.elisc_tm_counter ul li{width: 50%;}

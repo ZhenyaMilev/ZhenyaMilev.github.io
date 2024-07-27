@@ -138,7 +138,7 @@ function elisc_tm_trigger_menu(){
 	hamburger.on('click',function(){
 		var element 	= jQuery(this);
 		let imgBanner = document.querySelector('.elisc_tm_home .details .right img');
-		console.log(imgBanner)
+
 
 		if(element.hasClass('is-active')){
 			element.removeClass('is-active');
