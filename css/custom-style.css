@@ -185,7 +185,19 @@
 	gap: 20px;
 	margin-bottom: 40px;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: unset;
+	max-width: 1210px;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+	.portfolio-custom .header-wrapper {
+		display: flex;
+		gap: 20px;
+		margin-bottom: 40px;
+		align-items: center;
+		justify-content: space-between;
+	}
 }
 
 .portfolio-custom .header-wrapper h3 {
@@ -229,7 +241,7 @@
 	font-size: 16px;
 }
 
-.modal-content p {
+.modal-content p, .modal-content ul {
 	margin-bottom: 20px;
 }
 
@@ -275,6 +287,7 @@
 		transform: translateY(100%);
 		width: 100%;
 		opacity: 0;
+		overflow: overlay;
 	}
 
 	#projectModal.open {
