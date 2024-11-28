@@ -31,11 +31,30 @@
 /* Custom  */
 .whatsapp-float {
 	position: fixed;
-	bottom: 40px;
-	right: 40px;
-	z-index: 100;
-	cursor: pointer;
-	transition: all 0.3s ease-in-out;
+	bottom: 20px;
+	right: 20px;
+	background-color: #25d366;
+	color: white;
+	padding: 10px;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	opacity: 0; /* Начальное состояние: прозрачная */
+	transform: translateY(20px); /* Начальное состояние: сдвиг вниз */
+	transition: opacity 0.5s ease, transform 0.5s ease; /* Плавные переходы */
+	pointer-events: none; /* Чтобы кнопка не мешала, пока она невидима */
+	z-index: 10;
+}
+
+.whatsapp-float.show {
+	opacity: 1; /* Полностью видимая кнопка */
+	transform: translateY(0); /* Без сдвига */
+	pointer-events: auto; /* Кнопка снова кликабельна */
+}
+
+.whatsapp-float.hide {
+	opacity: 0; /* Прозрачность для исчезновения */
+	transform: translateY(20px); /* Сдвиг вниз при исчезновении */
+	pointer-events: none; /* Снова отключаем кликабельность */
 }
 
 .elisc_tm_mobile_menu .avatar {
@@ -52,15 +71,15 @@
 }
 
 .whatsapp-float img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 	transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 768px) {
 	.whatsapp-float img {
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 	}
 }
 
@@ -832,6 +851,12 @@ body::-webkit-scrollbar-thumb{
 .elisc_tm_button[data-style="border"] a:hover{
 	background-color: #130F49;
 	color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+	#home .buttons .elisc_tm_button a {
+		min-width: 180px;
+	}
 }
 .elisc_tm_button[data-position="center"]{
 	text-align: center;
@@ -1992,6 +2017,14 @@ body::-webkit-scrollbar-thumb{
 	visibility: visible;
 	transform: translateX(-50%);
 }
+
+@media only screen and (max-width: 768px) {
+	.elisc_tm_modalbox.opened .box_inner{
+		height: 100vh;
+		border-radius: 0;
+		top: 0;
+	}
+}
 .elisc_tm_modalbox .close{
 	position: fixed;
 	left: 100%;
@@ -2000,7 +2033,9 @@ body::-webkit-scrollbar-thumb{
 	z-index: 10;
 }
 .elisc_tm_modalbox .close a{
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 40px;
 	height: 40px;
 	text-decoration: none;
@@ -2020,7 +2055,6 @@ body::-webkit-scrollbar-thumb{
 }
 .elisc_tm_modalbox .close a i{
 	position: absolute;
-	transform: translate(-60%,-20%);
 }
 .elisc_tm_modalbox .description_wrap{
 	position: relative;
