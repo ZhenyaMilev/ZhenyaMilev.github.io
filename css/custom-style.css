@@ -431,11 +431,11 @@
 	display: block;
 }
 
-body.no-scroll {
-	overflow: hidden; /* Отключаем прокрутку */
-	position: fixed; /* Фиксируем страницу на месте */
-	width: 100%; /* Чтобы избежать сдвига контента из-за исчезновения скроллбара */
-}
+/* body.no-scroll {
+	overflow: hidden; 
+	position: fixed; 
+	width: 100%; 
+} */
 
 .list_inner .number-of-services.number-of-services {
 	display: flex;
@@ -446,4 +446,24 @@ body.no-scroll {
 .list_inner .number-of-services.number-of-services .partner-badge {
 	border-bottom: 1px solid;
 	font-size: 14px;
+}
+
+.list_inner .elisc_tm_read_more a {
+	pointer-events: none;
+}
+
+#portfolio {
+	display: none;
+}
+
+.blog-section {
+	display: none;
+}
+
+.elisc_tm_testimonial_wrapper {
+	margin-top: 40px;
+}
+
+.elisc_tm_full_link {
+	cursor: pointer;
 }

@@ -161,6 +161,7 @@ function elisc_tm_trigger_menu(){
 	mobileMenuList.on('click',function(){
 		jQuery('.elisc_tm_topbar .trigger .hamburger').removeClass('is-active');
 		mobileMenu.removeClass('opened');
+		toggleBlur ();
 		return false;
 	});
 	
@@ -216,34 +217,35 @@ function elisc_tm_menu_closer(){
 // -------------------------------------------------
 
 function elisc_tm_service_popup(){
-	
 	"use strict";
 	
-	var modalBox		= jQuery('.elisc_tm_modalbox');
-	var button			= jQuery('.elisc_tm_services .service_list .elisc_tm_full_link');
-	var closePopup		= modalBox.find('.close');
+	var modalBox = jQuery('.elisc_tm_modalbox');
+	var button = jQuery('.elisc_tm_services .service_list .elisc_tm_full_link, .elisc_tm_services .service_list .elisc_tm_read_more a');
+	var closePopup = modalBox.find('.close');
 	
-	button.on('click',function(){
-		var element = jQuery(this);
-		var parent	= element.closest('.elisc_tm_services .service_list ul li');
-		var elImage	= parent.find('.popup_image').attr('src');
-		var title	= parent.find('.title h3').text();
-		var content = parent.find('.hidden_details').html();
-		modalBox.addClass('opened');
-		modalBox.find('.description_wrap').html(content);
-		modalBox.find('.descriptions').prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+elImage+'"></div></div>');
-		elisc_tm_data_images();
-		modalBox.find('.descriptions .top_image').after('<div class="main_title"><h3>'+title+'</h3></div>');
-		fixedBody()
-		return false;
+	button.on('click', function(event){
+			event.preventDefault(); // Prevent the default action
+			var element = jQuery(this);
+			var parent = element.closest('.elisc_tm_services .service_list ul li');
+			var elImage = parent.find('.popup_image').attr('src');
+			var title = parent.find('.title h3').text();
+			var content = parent.find('.hidden_details').html();
+			modalBox.addClass('opened');
+			modalBox.find('.description_wrap').html(content);
+			modalBox.find('.descriptions').prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+elImage+'"></div></div>');
+			elisc_tm_data_images();
+			modalBox.find('.descriptions .top_image').after('<div class="main_title"><h3>'+title+'</h3></div>');
+			fixedBody();
+			return false;
 	});
-	closePopup.on('click',function(){
-		modalBox.removeClass('opened');
-		modalBox.find('.description_wrap').html('');
-		fixedBody()
-		return false;
+	closePopup.on('click', function(){
+			modalBox.removeClass('opened');
+			modalBox.find('.description_wrap').html('');
+			fixedBody();
+			return false;
 	});
 }
+
 
 function fixedBody() {
 	let body = document.querySelector('body');
