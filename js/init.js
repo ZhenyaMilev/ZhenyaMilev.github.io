@@ -235,21 +235,33 @@ function elisc_tm_service_popup(){
 			modalBox.find('.descriptions').prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+elImage+'"></div></div>');
 			elisc_tm_data_images();
 			modalBox.find('.descriptions .top_image').after('<div class="main_title"><h3>'+title+'</h3></div>');
-			fixedBody();
+			fixedBodyOpen()
 			return false;
 	});
 	closePopup.on('click', function(){
 			modalBox.removeClass('opened');
 			modalBox.find('.description_wrap').html('');
-			fixedBody();
+			fixedBodyClose();
 			return false;
 	});
 }
 
 
-function fixedBody() {
-	let body = document.querySelector('body');
-	body.classList.toggle('no-scroll');
+let scrollPosition = 0;
+
+function fixedBodyOpen() {
+    scrollPosition = window.scrollY || window.pageYOffset;
+
+    document.body.classList.add('no-scroll');
+
+    document.body.style.top = `-${scrollPosition}px`;
+}
+
+function fixedBodyClose() {
+    document.body.classList.remove('no-scroll');
+    document.body.style.top = '';
+
+    window.scrollTo(0, scrollPosition);
 }
 
 // -------------------------------------------------
