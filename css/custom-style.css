@@ -581,14 +581,6 @@ body.no-scroll {
 	width: 100%; 
 }
 
-.more-details:focus {
-	outline: none;
-	border: none;
-	border: 1px solid #55527c;
-	border-radius: 4px;
-	padding: 2px 6px;
-}
-
 /* Анимации */
 @keyframes slideUp {
 	from {
@@ -664,10 +656,24 @@ body.no-scroll {
 }
 
 .popup-content h6 {
-	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	margin-bottom: 5px;
 	font-size: 18px;
 	font-weight: bold;
 	color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+	.popup-content h6 {
+		max-width: 90%;
+		gap: 15px;
+	}
+}
+
+.popup-content i {
+	font-size: 14px;
 }
 
 .popup-content h5 {
@@ -713,6 +719,12 @@ body.no-scroll {
 	display: block;
 }
 
+.elisc_tm_title {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
 /* Мобильные стили */
 @media (max-width: 768px) {
 	.slider-item {
@@ -730,7 +742,11 @@ body.no-scroll {
 }
 
 #portfolio {
-	padding: 80px 20px;
+	padding: 40px 20px;
+}
+
+.close-popup.close-popup i {
+	font-size: 22px;
 }
 
 

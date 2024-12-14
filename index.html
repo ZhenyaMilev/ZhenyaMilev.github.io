@@ -116,29 +116,21 @@
 							</ul>
 						</div>
 						<div class="social">
-							<ul style="list-style: none; padding: 0; display: flex; gap: 10px;">
+							<ul>
 								<li>
-									<a href="https://t.me/zh_m_3" target="_blank" style="text-decoration: none; color: inherit;">
-										<i class="fa-brands fa-telegram" style="font-size: 20px;"></i>
+									<a class="tg" style="display: flex;" href="https://t.me/zh_m_3">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+											<path
+												d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375 c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219 c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966 c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693 c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351 c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z">
+											</path>
+										</svg>
 									</a>
 								</li>
-								<li>
-									<a href="mailto:milevich.evgen@gmail.com" style="text-decoration: none; color: inherit;">
-										<i class="fa-solid fa-envelope" style="font-size: 20px;"></i>
-									</a>
-								</li>
-								<li>
-									<a href="http://linkedin.com/in/евгений-милевич-4bb388205" target="_blank"
-										style="text-decoration: none; color: inherit;">
-										<i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
-									</a>
-								</li>
-								<li>
-									<a href="https://www.youtube.com/@shopify_developer/videos" target="_blank"
-										style="text-decoration: none; color: inherit;">
-										<i class="fa-brands fa-youtube" style="font-size: 20px;"></i>
-									</a>
-								</li>
+								<li><a href="mailto:milevich.evgen@gmail.com"><i class="icon-mail-2"></i></a></li>
+								<li><a target="_blank" href="http://linkedin.com/in/евгений-милевич-4bb388205"><i
+											class="icon-linkedin-1"></i></a></li>
+								<li><a target="_blank" href="https://www.youtube.com/@shopify_developer/videos"><i
+											class="icon-youtube-2"></i></a></li>
 							</ul>
 
 						</div>
@@ -189,6 +181,13 @@
 											class="icon-linkedin-1"></i></a></li>
 								<li><a target="_blank" href="https://www.youtube.com/@shopify_developer/videos"><i
 											class="icon-youtube-2"></i></a></li>
+											<li>
+												<a target="_blank" href="https://www.upwork.com/freelancers/~012c77a2db3124923c">
+													<svg style="width: 19px; height: 19px;" xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 32 32">
+														<path d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z"/>
+													</svg>
+													</a>
+												</li>
 							</ul>
 						</div>
 						<div class="text">
@@ -816,6 +815,9 @@
 						<div class="slider-header">
 							<h3 class="slider-title">Portfolio</h3>
 							<div class="slider-controls">
+								<div class="slider-pagination">
+									<span class="current-page">1</span>/<span class="total-pages">1</span>
+								</div>
 								<button class="slider-button prev">
 									<i class="fas fa-chevron-left"></i>
 								</button>
@@ -825,6 +827,7 @@
 							</div>
 						</div>
 
+
 						<!-- Контейнер слайдера -->
 						<div class="slider-container">
 							<div class="slider-content">
@@ -833,56 +836,57 @@
 								<!-- Слайд 1 -->
 								<div class="slider-item" data-popup="popup-1">
 									<img src="./img/portfolio/1.jpg" alt="Image 1" />
-									<h3>Shopify | Development from Scratch</h3>
+									<h3>Shopify | Store from Scratch</h3>
 									<button class="more-details">More details</button>
 								</div>
 
 								<!-- Слайд 2 -->
 								<div class="slider-item" data-popup="popup-2">
 									<img src="./img/portfolio/2.jpg" alt="Image 2" />
-									<h3>Shopify | Development from Scratch</h3>
+									<h3>Shopify | Store from Scratch</h3>
 									<button class="more-details">More details</button>
 								</div>
 
 								<!-- Слайд 3 -->
 								<div class="slider-item" data-popup="popup-3">
 									<img src="./img/portfolio/3.jpg" alt="Image 3" />
-									<h3>Shopify | Development from Scratch</h3>
+									<h3>Shopify | Theme and Integration Setup
+										Pagination</h3>
 									<button class="more-details">More details</button>
 								</div>
 
 								<!-- Слайд 4 -->
 								<div class="slider-item" data-popup="popup-4">
 									<img src="./img/portfolio/4.jpg" alt="Image 4" />
-									<h3>Shopify | Development from Scratch</h3>
+									<h3>Shopify | Layout Enhancements</h3>
 									<button class="more-details">More details</button>
 								</div>
 
 								<!-- Слайд 5 -->
 								<div class="slider-item" data-popup="popup-5">
 									<img src="./img/portfolio/5.jpg" alt="Image 5" />
-									<h3>Shopify | Development from Scratch</h3>
+									<h3>Shopify | Landing page</h3>
 									<button class="more-details">More details</button>
 								</div>
 
 								<!-- Слайд 6 -->
 								<div class="slider-item" data-popup="popup-6">
 									<img src="./img/portfolio/6.jpg" alt="Image 6" />
-									<h3>Shopify | Development from Scratch</h3>
+									<h3>Shopify | Layout Enhancements</h3>
 									<button class="more-details">More details</button>
 								</div>
 
 								<!-- Слайд 7 -->
 								<div class="slider-item" data-popup="popup-7">
 									<img src="./img/portfolio/7.jpg" alt="Image 7" />
-									<h3>Shopify | Development from Scratch</h3>
+									<h3>Shopify | Layout Enhancements</h3>
 									<button class="more-details">More details</button>
 								</div>
 
 								<!-- Слайд 8 -->
 								<div class="slider-item" data-popup="popup-8">
 									<img src="./img/portfolio/8.jpg" alt="Image 8" />
-									<h3>Shopify | Development from Scratch</h3>
+									<h3>Shopify | Layout Enhancements via PageFly and custom coding</h3>
 									<button class="more-details">More details</button>
 								</div>
 							</div>
@@ -895,14 +899,14 @@
 									<i class="fas fa-times"></i>
 								</button>
 								<div class="header">
-									<h6>Project: E-commerce & Merchandise</h6>
+									<h6><i class="fas fa-briefcase"></i><span>E-commerce & Merchandise</span></h6>
 									<div class="project-link">
 										<a href="https://allswag.com/" target="_blank" rel="noopener noreferrer">
 											<i class="fas fa-link"></i> <span>Project Link</span>
 										</a>
 										<p style="font-size: 14px; color: #666; margin-top: 5px;">The domain might change in the future.</p>
 									</div>
-									
+
 								</div>
 								<h5>Website Development</h5>
 								<p>Built the website layout from scratch per design specs.</p>
@@ -926,7 +930,7 @@
 									<i class="fas fa-times"></i>
 								</button>
 								<div class="header">
-									<h6>Project: E-commerce & Merchandise</h6>
+									<h6><i class="fas fa-briefcase"></i><span>Toys & Hobbies</span></h6>
 								</div>
 								<h5>Theme Selection</h5>
 								<p>Chosen theme aligns with brand aesthetics.</p>
@@ -956,7 +960,7 @@
 									<i class="fas fa-times"></i>
 								</button>
 								<div class="header">
-									<h6>Project: E-commerce & Merchandise</h6>
+									<h6><i class="fas fa-briefcase"></i><span>Jewelry</span></h6>
 								</div>
 								<div class="project-link">
 									<a href="https://michaelgabriels.com/" target="_blank" rel="noopener noreferrer">
@@ -990,7 +994,7 @@
 									<i class="fas fa-times"></i>
 								</button>
 								<div class="header">
-									<h6>Project: Fashion & Footwear</h6>
+									<h6><i class="fas fa-briefcase"></i><span>Fashion & Footwear</span></h6>
 								</div>
 								<div class="project-link">
 									<a href="https://www.joyfolie.com/" target="_blank" rel="noopener noreferrer">
@@ -1019,7 +1023,7 @@
 									<i class="fas fa-times"></i>
 								</button>
 								<div class="header">
-									<h6>Project: E-commerce & Merchandise</h6>
+									<h6><i class="fas fa-briefcase"></i><span>Health & Beauty / Vitamins & Supplements</span></h6>
 								</div>
 								<h5>Banners</h5>
 								<p>Developed custom banners for product photos.</p>
@@ -1045,7 +1049,7 @@
 									<i class="fas fa-times"></i>
 								</button>
 								<div class="header">
-									<h6>Project: Fashion & Apparel Website</h6>
+									<h6><i class="fas fa-briefcase"></i><span>Fashion & Apparel Website</span></h6>
 								</div>
 								<div class="project-link">
 									<a href="https://farfieworldwide.com/" target="_blank" rel="noopener noreferrer">
@@ -1071,7 +1075,7 @@
 									<i class="fas fa-times"></i>
 								</button>
 								<div class="header">
-									<h6>Project: Health & Beauty Products</h6>
+									<h6><i class="fas fa-briefcase"></i><span>Health & Beauty Products</span></h6>
 								</div>
 								<div class="project-link">
 									<a href="https://oliviacare.com/" target="_blank" rel="noopener noreferrer">
@@ -1095,7 +1099,7 @@
 									<i class="fas fa-times"></i>
 								</button>
 								<div class="header">
-									<h6>Project: Massage & Wellness Products</h6>
+									<h6><i class="fas fa-briefcase"></i><span>Massage & Wellness Products</span></h6>
 								</div>
 								<h5>Page Creation</h5>
 								<p>Developed multiple pages using the PageFly app.</p>
@@ -1121,25 +1125,31 @@
 						</div>
 						<div class="blog-posts">
 							<div class="blog-post">
-								<a href="https://shopify-guides.blogspot.com/2024/12/5-ways-to-improve-your-shopify-store.html" target="_blank">
+								<a href="https://shopify-guides.blogspot.com/2024/12/5-ways-to-improve-your-shopify-store.html"
+									target="_blank">
 									<img src="./img/5-ways.webp" alt="Изображение поста 1">
 									<h3>5 Ways to Improve Your Shopify Store</h3>
 								</a>
-								<a href="https://shopify-guides.blogspot.com/2024/12/5-ways-to-improve-your-shopify-store.html" target="_blank" class="read-post-link">Read post</a>
+								<a href="https://shopify-guides.blogspot.com/2024/12/5-ways-to-improve-your-shopify-store.html"
+									target="_blank" class="read-post-link">Read post</a>
 							</div>
 							<div class="blog-post">
-								<a href="https://shopify-guides.blogspot.com/2024/12/how-to-increase-sales-with-seo-on.html" target="_blank">
+								<a href="https://shopify-guides.blogspot.com/2024/12/how-to-increase-sales-with-seo-on.html"
+									target="_blank">
 									<img src="./img/optimization.webp" alt="Изображение поста 2">
 									<h3>How to Increase Sales with SEO on Shopify</h3>
 								</a>
-								<a href="https://shopify-guides.blogspot.com/2024/12/how-to-increase-sales-with-seo-on.html" target="_blank" class="read-post-link">Read post</a>
+								<a href="https://shopify-guides.blogspot.com/2024/12/how-to-increase-sales-with-seo-on.html"
+									target="_blank" class="read-post-link">Read post</a>
 							</div>
 							<div class="blog-post">
-								<a href="https://shopify-guides.blogspot.com/2024/12/best-apps-for-your-shopify-store.html" target="_blank">
+								<a href="https://shopify-guides.blogspot.com/2024/12/best-apps-for-your-shopify-store.html"
+									target="_blank">
 									<img src="./img/apps.webp" alt="Изображение поста 3">
 									<h3>Best Apps for Your Shopify Store</h3>
 								</a>
-								<a href="https://shopify-guides.blogspot.com/2024/12/best-apps-for-your-shopify-store.html" target="_blank" class="read-post-link">Read post</a>
+								<a href="https://shopify-guides.blogspot.com/2024/12/best-apps-for-your-shopify-store.html"
+									target="_blank" class="read-post-link">Read post</a>
 							</div>
 						</div>
 					</section>
@@ -1151,46 +1161,66 @@
 								<div class="elisc_tm_title" data-position="center">
 									<span>- Testimonial</span>
 									<h3>What client's say?</h3>
+									<div class="elisc_tm_button w-auto" data-style="border">
+										<a class="anchor" target="_blank" href="https://www.upwork.com/freelancers/~012c77a2db3124923c">See on Upwork</a>
+									</div>
 								</div>
 								<div class="testimonials_list">
 									<ul class="owl-carousel owl-theme">
 										<li>
 											<div class="text">
-												<p>Exceptional Shopify development! The custom theme perfectly matches our brand, improving
-													our site's functionality and user experience. Highly recommend</p>
+												<img src="./img/testimonials/Screenshot_1.png" alt="">
 											</div>
-											<div class="short">
+											<!-- <div class="short">
 												<div class="detail">
 													<h3>Anna M.</h3>
 												</div>
-											</div>
-											<p class="job">Fashion Store Owner</p>
+											</div> -->
+											<!-- <p class="job">Fashion Store Owner</p> -->
 										</li>
 										<li>
 											<div class="text">
-												<p>Outstanding service! The developer's attention to detail and app integration has boosted
-													our sales and customer satisfaction. A game-changer for our business</p>
+												<img src="./img/testimonials/Screenshot_2.png" alt="">
 											</div>
-											<div class="short">
+											<!-- <div class="short">
 												<div class="detail">
 													<h3>Michael J.</h3>
 												</div>
-											</div>
-											<p class="job">Gourmet Food Store Owner</p>
+											</div> -->
+											<!-- <p class="job">Gourmet Food Store Owner</p> -->
 										</li>
 										<li>
 											<div class="text">
-												<p>Faced with slow loading and poor mobile responsiveness, Evhenii optimized images, updated
-													scripts, and enhanced design, boosting site speed and user experience. This resulted in
-													higher engagement and sales, demonstrating the developer's impactful problem-solving skills.
-												</p>
+												<img src="./img/testimonials/Screenshot_3.png" alt="">
 											</div>
-											<div class="short">
+											<!-- <div class="short">
 												<div class="detail">
 													<h3>Sophie K.</h3>
 												</div>
+											</div> -->
+											<!-- <p class="job">Jewelry Store Founder</p> -->
+										</li>
+										<li>
+											<div class="text">
+												<img src="./img/testimonials/Screenshot_4.png" alt="">
 											</div>
-											<p class="job">Jewelry Store Founder</p>
+											<!-- <div class="short">
+												<div class="detail">
+													<h3>Sophie K.</h3>
+												</div>
+											</div> -->
+											<!-- <p class="job">Jewelry Store Founder</p> -->
+										</li>
+										<li>
+											<div class="text">
+												<img src="./img/testimonials/Screenshot_5.png" alt="">
+											</div>
+											<!-- <div class="short">
+												<div class="detail">
+													<h3>Sophie K.</h3>
+												</div>
+											</div> -->
+											<!-- <p class="job">Jewelry Store Founder</p> -->
 										</li>
 									</ul>
 								</div>
@@ -1474,9 +1504,6 @@
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
 
-
-
-
 		// Получаем элементы секции и кнопки
 		const homeSection = document.getElementById('home');
 		const whatsappButton = document.querySelector('.whatsapp-float');
@@ -1513,7 +1540,6 @@
 
 	});
 </script>
-
 <script>
 	// JavaScript код
 
@@ -1523,6 +1549,8 @@
 	const prevButton = document.querySelector('.slider-button.prev');
 	const nextButton = document.querySelector('.slider-button.next');
 	const overlay = document.querySelector('.overlay');
+	const currentPageElement = document.querySelector('.current-page');
+	const totalPagesElement = document.querySelector('.total-pages');
 
 	// Переменные для управления слайдером
 	let currentIndex = 0;
@@ -1530,6 +1558,7 @@
 
 	// Функция для отображения слайдов
 	function renderSlides() {
+		updatePagination();
 		// Скрываем все слайды
 		slides.forEach(slide => {
 			slide.style.display = 'none';
@@ -1564,44 +1593,45 @@
 	}
 
 	function debounce(func, delay) {
-  let timeout;
-  return (...args) => {
-    if (timeout) return; // Игнорируем вызов, если таймаут активен
-    func(...args);
-    timeout = setTimeout(() => {
-      timeout = null; // Сбрасываем таймаут после задержки
-    }, delay);
-  };
-}
+		let timeout;
+		return (...args) => {
+			if (timeout) return; // Игнорируем вызов, если таймаут активен
+			func(...args);
+			timeout = setTimeout(() => {
+				timeout = null; // Сбрасываем таймаут после задержки
+			}, delay);
+		};
+	}
 
-// Обработчики кликов
-prevButton.addEventListener(
-  'click',
-  debounce(() => {
-    if (currentIndex > 0) {
-      sliderContent.classList.add('fade-out');
-      setTimeout(() => {
-        currentIndex -= slidesToShow;
-        renderSlides();
-        sliderContent.classList.remove('fade-out');
-      }, 300);
-    }
-  }, 300) // Интервал задержки
-);
+	// Обработчики кликов
+	prevButton.addEventListener(
+		'click',
+		debounce(() => {
+			if (currentIndex > 0) {
+				sliderContent.classList.add('fade-out');
+				setTimeout(() => {
+					currentIndex -= slidesToShow;
+					renderSlides();
+					updatePagination();
+					sliderContent.classList.remove('fade-out');
+				}, 300);
+			}
+		}, 300) // Интервал задержки
+	);
 
-nextButton.addEventListener(
-  'click',
-  debounce(() => {
-    if (currentIndex + slidesToShow < slides.length) {
-      sliderContent.classList.add('fade-out');
-      setTimeout(() => {
-        currentIndex += slidesToShow;
-        renderSlides();
-        sliderContent.classList.remove('fade-out');
-      }, 300);
-    }
-  }, 300) // Интервал задержки
-);
+	nextButton.addEventListener(
+		'click',
+		debounce(() => {
+			if (currentIndex + slidesToShow < slides.length) {
+				sliderContent.classList.add('fade-out');
+				setTimeout(() => {
+					currentIndex += slidesToShow;
+					renderSlides();
+					sliderContent.classList.remove('fade-out');
+				}, 300);
+			}
+		}, 300) // Интервал задержки
+	);
 
 	// Обновление при изменении размера окна
 	window.addEventListener('resize', () => {
@@ -1617,6 +1647,7 @@ nextButton.addEventListener(
 		const closePopupButton = popup.querySelector('.close-popup');
 
 		moreDetailsButton.addEventListener('click', () => {
+			fixedBodyOpen();
 			popup.classList.add('active');
 			overlay.classList.add('active');
 		});
@@ -1624,6 +1655,7 @@ nextButton.addEventListener(
 		closePopupButton.addEventListener('click', () => {
 			popup.classList.remove('active');
 			overlay.classList.remove('active');
+			fixedBodyClose();
 		});
 	});
 
@@ -1636,47 +1668,56 @@ nextButton.addEventListener(
 		}
 	});
 
+	function updatePagination() {
+		const totalSets = Math.ceil(slides.length / slidesToShow);
+		const currentSet = Math.floor(currentIndex / slidesToShow) + 1;
+
+		currentPageElement.textContent = currentSet;
+		totalPagesElement.textContent = totalSets;
+	}
+
+
 	// Инициализация
 	renderSlides();
 </script>
 <script>
-  document.querySelectorAll('.popup').forEach(popup => {
-    const headers = popup.querySelectorAll('.popup-content h5');
+	document.querySelectorAll('.popup').forEach(popup => {
+		const headers = popup.querySelectorAll('.popup-content h5');
 
-    headers.forEach(header => {
-      const nextSiblings = [];
-      let sibling = header.nextElementSibling;
+		headers.forEach(header => {
+			const nextSiblings = [];
+			let sibling = header.nextElementSibling;
 
-      while (sibling && sibling.tagName !== 'H5') {
-        nextSiblings.push(sibling);
-        sibling = sibling.nextElementSibling;
-      }
+			while (sibling && sibling.tagName !== 'H5') {
+				nextSiblings.push(sibling);
+				sibling = sibling.nextElementSibling;
+			}
 
-      const wrapper = document.createElement('div');
-      wrapper.classList.add('accordion-content');
-      nextSiblings.forEach(element => wrapper.appendChild(element));
+			const wrapper = document.createElement('div');
+			wrapper.classList.add('accordion-content');
+			nextSiblings.forEach(element => wrapper.appendChild(element));
 
-      header.after(wrapper);
-      header.classList.add('accordion-header');
-      header.innerHTML += `<i class="fas fa-chevron-down"></i>`;
+			header.after(wrapper);
+			header.classList.add('accordion-header');
+			header.innerHTML += `<i class="fas fa-chevron-down"></i>`;
 
-      header.addEventListener('click', () => {
-        const isActive = header.classList.contains('active');
+			header.addEventListener('click', () => {
+				const isActive = header.classList.contains('active');
 
-        if (!isActive) {
-          popup.querySelectorAll('.accordion-header').forEach(h => {
-            h.classList.remove('active');
-            h.nextElementSibling.style.maxHeight = null;
-          });
+				if (!isActive) {
+					popup.querySelectorAll('.accordion-header').forEach(h => {
+						h.classList.remove('active');
+						h.nextElementSibling.style.maxHeight = null;
+					});
 
-          header.classList.add('active');
-          const content = header.nextElementSibling;
-          content.style.maxHeight = content.scrollHeight + 'px';
-        } else {
-          header.classList.remove('active');
-          header.nextElementSibling.style.maxHeight = null;
-        }
-      });
-    });
-  });
+					header.classList.add('active');
+					const content = header.nextElementSibling;
+					content.style.maxHeight = content.scrollHeight + 'px';
+				} else {
+					header.classList.remove('active');
+					header.nextElementSibling.style.maxHeight = null;
+				}
+			});
+		});
+	});
 </script>
