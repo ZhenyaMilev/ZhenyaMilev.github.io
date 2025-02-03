@@ -12,7 +12,7 @@
 }
 
 .elisc_tm_video .text {
-	display: none;
+	display: none;  
 }
 
 .elisc_tm_button[data-position="center"] {
